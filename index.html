@@ -1,336 +1,383 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-<head>
-        <title>Portfolio By Damian Jans...</title>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="js/js.js"> </script>
-        <link href="css/main.css" rel="stylesheet">
-</head>
-<body>
-<!-- navBar-->
-<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-                <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" >
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="#"> BeCreative</a>
-                </div>
-                <div class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav navbar-right">
-                                <li>
-                                        <a href="#home" class="home">Home</a>
-                                </li>
+<canvas id="can" width="500" height="500" style="border:1px solid #000000;"></canvas>
 
-                                <li>
-                                        <a href="#about" class="about  click55 ">
-                                                About me.
-                                        </a>
-                                </li>
-                                <li>
-                                        <a href="#how-I"class="pro" id="click6">
-                                                Progress
-                                        </a>
-                                </li>
-                                <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                                "Programs" I use <b class="caret"></b>
-                                        </a>
-                                                <ul class="dropdown-menu">
-                                                        <li class="dropdown-header">
-                                                                <a href="#what-do-i" class="whatI" id="click0">
-                                                                        Html & css;
-                                                                </a>
-                                                        </li>
-                                                        <li class="dropdown-header">
-                                                                <a href="#what-do-i" class="whatI"  id="click1">
-                                                                        Bootstrap;
-                                                                </a>
-                                                        </li>
-                                                        <li class="dropdown-header">
-                                                                <a href="#what-do-i" class="whatI"  id="click2">
-                                                                        jQuary;
-                                                                </a>
-                                                        </li>
-                                                        <li class="dropdown-header">
-                                                                <a href="#what-do-i-ps"  class="whatI" id="click3">
-                                                                        Photoshop cs6;
-                                                                </a>
-                                                        </li>
-                                                        <li class="dropdown-header">
-                                                                <a href="#what-do-i-js" class="whatI"  id="click4">
-                                                                        JavaScript;
-                                                                </a>
-                                                        </li>
+<script>
+var can = document.getElementById("can").getContext("2d");
+can.font = '30px Arial';
 
-                                                </ul>
-                                                        <li>
-                                                                <a href="#contact" data-toggle="modal">Contact</a>
-                                                        </li>
-                                </li>
-                        </ul>
-                </div>
-        </div>
-</div>
-<!--header-->
-<div class="container page">
-        <div class="jumbotron  afb text-center" id="home" >
-                <h2>
-                        Damian Jans' Portfolio.
-                </h2>
-                <p>
-                        Dont just think creative Be Creative ;)
-                </p>
-                <img src="../img/me.jpg" width="150px" height="150px" id="shake0">
-                <p>
-                        The not so proffasinal web-desinger.
-                </p>
-                <a href="https://www.facebook.com/" class="btn btn-primary"> Facebook</a>
-                <a href="#" class="btn btn-info disabled"> Twitter</a>
-                <a href="https://www.Instagram.com/" class="btn btn-warning"> Instagram</a>
-        </div>
-</div>
-<!--Contact-->
-<div class="modal fade" id="contact" role="dialog">
-        <div class="modal-dialog">
-                <div class="modal-content">
-                        <form class="form-horizontal" role="form">
-                                <div class="modal-header">
-                                        <h4>Contact<h4>
-                        </div>
-                        <div class="modal-body">
-                                        <div class="form-group">
-                                                <label for="contact-name" class="col-sm-2 control-label">Name</label>
-                                                <div class="col-sm-10">
-                                                        <input type="text" class="form-control" id="contact-name" placeholder="First & Last Name">
-                                                </div>
-                                        </div>
-                                        <div class="form-group">
-                                                <label for="contact-email" class="col-sm-2 control-label">Email</label>
-                                                <div class="col-sm-10">
-                                                        <input type="email" class="form-control" id="contact-email" placeholder="example@domain.com">
-                                                </div>
-                                        </div>
-                                        <div class="form-group">
-                                                <label for="contact-message" class="col-sm-2 control-label">Message</label>
-                                                <div class="col-sm-10">
-                                                        <textarea class="form-control" rows="4"></textarea>
-                                                </div>
-                                        </div>
-                        </div>
-                        <div class="modal-footer">
-                                        <a class="btn btn-default" data-dismiss="modal">Close</a>
-                                        <button type="submit" class="btn btn-primary">Send</button>
-                                </div>
-                        </form>
-                </div>
-        </div>
-</div>
-<!--whoAmI--->
-<div class="container page">
-        <h3 class="jumbotron text-center target5 " id="about">Who am i?<h3>
-        <div class="row">
-                        <div class="col-md-12 text-center ding5 ">
-                        <p class="c">
-                                I'm just some random guy from the netherlands trying to make some websites and earn some money.
-                        </p>
-                </div>
-        </div>
-        <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-3 c text-center ">
-                        <h2>
-                                Personal Information:
-                        </h2>
-                        <ul class="ding5">
-                                <li>
-                                        <strong>Full name:</strong> Damian Odin Nigel Jans.
-                                </li>
-                                <li>
-                                        <strong>Birth date:</strong> 15th of may 1997.
-                                </li>
-                                <li>
-                                        <strong>Nationality:</strong> Dutch.
-                                </li>
-                        </ul>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 c text-center">
-                        <h2>
-                                Location:
-                        </h2>
-                        <ul class="ding5">
-                                <li>
-                                        <strong>Contery:</strong> The Netherlands.
-                                </li>
-                                <li>
-                                        <strong>Province: </strong>North-Holland.
-                                </li>
-                                <li>
-                                        <strong>City:</strong>Haarlem
-                                </li>
-                        </ul>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 c text-center ">
-                        <h2>
-                                Skills
-                        </h2>
-                        <ul class="ding5">
-                                <li>
-                                        Html & css
-                                </li>
-                                <li>
-                                        Bootstrap
-                                </li>
-                                <li>
-                                        jQquery
-                                </li>
-                                <li>
-                                        Photoshop
-                                </li>
-                                <li>
-                                        JavaScript
-                                </li>
-                        </ul>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-3 c text-center ">
-                        <h2>
-                                Diplomas
-                        </h2>
-                        <ul class="ding5">
-                                <li>
-                                        Vmbo-k
-                                </li>
-                                <li>
-                                        vmbo-tl
-                                </li>
-                                <li>
-                                        Havo
-                                </li>
-                        </ul>
-                </div>
-        </div>
-</div>
-<!--how i-->
-<div class="container page">
-      <h3 class="jumbotron targ text-center" id="how-I">How I create your website <h3>
-      <div class="row">
-              <div class="col-xs-12 col-sm-6 col-md-3 text-center  c "id="col1">
-                      <h2>
-                              1. Kennismaking.
-                      </h2>
-                      <p class="ding">
-                        During the interview, I'll identify all your wishes and ideas for the New Website.
-                      </p>
-              </div>
+var HEIGHT = 500;
+var WIDTH = 500;
+var timeWhenGameStarted = Date.now();   //return time in ms
 
-              <div class="col-xs-12 col-sm-6 col-md-3 text-center  c "id="col1">
-                      <h2>
-                              2. Aan de slag.
-                      </h2>
-                      <p class="ding">
-                        After approval we I'll start immediately! I really work as a team, together with the customer.
-                      </p>
-              </div>
+var frameCount = 0;
 
-              <div class="col-xs-12 col-sm-6 col-md-3 text-center  c "id="col1">
-                      <h2>
-                              3. Design.
-                      </h2>
-                      <p class="ding">
+var score = 0;
+var player;
 
-                        There will be a unique smart design. the desings purpuse is to give an identity to the site.
-                      </p>
-              </div>
+createPlayer = function() {
+        var self = {
+           type:"player",
+           x:50,
+           spdX:30,
+           y:40,
+           spdY:5,
+           name:'P',
+           width:20,
+           height:20,
+           color:'green',
+       }
+           self.hp=10;
+           self.atkSpd=1;
+           self.attackCounter=0;
+            self.aimAngle=0;
+            //
+           self.pressingDown=false;
+           self.pressingUp=false;
+           self.pressingLeft=false;
+           self.pressingRight=false;
+           player = self;
 
-              <div class="col-xs-12 col-sm-6 col-md-3 text-center  c "id="col1">
-                      <h2>
-                              4. Development.
-                      </h2>
-                      <p class="ding">
-                        Step by step your website will grow. And I'll give you your desired design and the modules who you website need.
-                      </p>
-              </div>
-      </div>
-</div>
-<!--What do i usse-->
-<div class="container page">
-      <h3 class="jumbotron text-center" id="what-do-i">What do I use<h3>
-      <div class="row">
-        <div class="col-md-4 c">
-              <a href="#" class="thumbnail">
-                      <img src="../Img/html-css.jpg" alt="HTML and CSS">
-              </a>
-              <p class="ding0">
-                              To Creatde your website I'll need to write the basic page in HTML5, HTML is used to give a webpage the structure it needs to load the webpage. Once that is completed I'll style your website with CSS3, CSS is used to style that webpage once the structure is completed. <a href="sample1.html" class="btn btn-info"> sample1</a>   <a href="Sample2.html" class="btn btn-info"> sample2</a>		</p>
-              <button class="btn btn-danger target0"> More info</button>
-      </div>
-              <div class="col-md-4 c">
-                      <a href="#" class="thumbnail">
-                              <img src="../Img/bootstrap.jpg" alt="Bootstrap.">
-                      </a>
-                      <p class="ding1">
-                              In order to make an quik and awesomelooking website that looks great on all devises I'll use Bootstrap. Bootstrap is nice and simpel but it has some great features. you can build a fully responive website withbootstrap in half time
-                              <a href="bootstrapsample.html" class="btn btn-info"> sample</a>
-                      </p>
-                      <button class="btn btn-danger target1"> More info</button>
-              </div>
-              <div class="col-md-4 c">
-                      <a href="#" class="thumbnail">
-                              <img src="../Img/jquary.jpg" alt="jQuary">
-                      </a>
-                      <p class="ding2">
-                              jQuery is the most popular JavaScript library in use today, jQuery gives me the possibility to create awesome looking animations without cracking my head. It's really useful because it really does cut the time in half
+}
 
-                      </p>
-<button class="btn btn-danger target2"> More info</button>
-              </div>
+var enemyList = {};
+var upgradeList = {};
+var bulletList = {};
+
+getDistanceBetweenEntity = function (entity1,entity2){  //return distance (number)
+        var vx = entity1.x - entity2.x;
+        var vy = entity1.y - entity2.y;
+        return Math.sqrt(vx*vx+vy*vy);
+}
+
+testCollisionEntity = function (entity1,entity2){       //return if colliding (true/false)
+        var rect1 = {
+                x:entity1.x-entity1.width/2,
+                y:entity1.y-entity1.height/2,
+                width:entity1.width,
+                height:entity1.height,
+        }
+        var rect2 = {
+                x:entity2.x-entity2.width/2,
+                y:entity2.y-entity2.height/2,
+                width:entity2.width,
+                height:entity2.height,
+        }
+        return testCollisionRectRect(rect1,rect2);
+
+}
+
+Enemy = function (id,x,y,spdX,spdY,width,height){
+        var self = {
+                type:"enemy",
+                x:x,
+                spdX:spdX,
+                y:y ,
+                spdY:spdY,
+                name:'E',
+                id:id,
+                width:width,
+                height:height,
+                color:'red',
+            }
+                self.hp=10;
+                self.aimAngle=0;
+                self.atkSpd=1;
+                self.attackCounter=0;
+
+        enemyList[id] = self;
+
+}
+
+randomlyGenerateEnemy = function(){
+        //Math.random() returns a number between 0 and 1
+        var x = Math.random()*WIDTH;
+        var y = Math.random()*HEIGHT;
+        var height = 10 + Math.random()*30;     //between 10 and 40
+        var width = 10 + Math.random()*30;
+        var id = Math.random();
+        var spdX = 5 + Math.random() * 5;
+        var spdY = 5 + Math.random() * 5;
+        Enemy(id,x,y,spdX,spdY,width,height);
+
+}
+
+Upgrade = function (id,x,y,spdX,spdY,width,height,category,color){
+        var self = {
+                type:"upgrade",
+                x:x,
+                spdX:spdX,
+                y:y,
+                spdY:spdY,
+                id:id,
+                width:width,
+                height:height,
+                color:color,
+            }
+        self.category =   category;
+        upgradeList[id] = self;
+}
+
+randomlyGenerateUpgrade = function(){
+        //Math.random() returns a number between 0 and 1
+        var x = Math.random()*WIDTH;
+        var y = Math.random()*HEIGHT;
+        var height = 10;
+        var width = 10;
+        var id = Math.random();
+        var spdX = 0;
+        var spdY = 0;
+
+        if(Math.random()<0.5){
+                var category = 'score';
+                var color = 'orange';
+        } else {
+                var category = 'atkSpd';
+                var color = 'purple';
+        }
+
+        Upgrade(id,x,y,spdX,spdY,width,height,category,color);
+}
+
+Bullet = function (id,x,y,spdX,spdY,width,height){
+        var self = {
+                type:"bullet",
+                x:x,
+                spdX:spdX,
+                y:y,
+                spdY:spdY,
+                id:id,
+                width:width,
+                height:height,
+                color:'black',
+            }
+        self.timer = timer;
+        bulletList[id] = self;
+}
+
+generateBullet = function(actor, overwriteAngle){
+        //Math.random() returns a number between 0 and 1
+        var x = actor.x;
+        var y = actor.y;
+        var height = 10;
+        var width = 10;
+        var id = Math.random();
+
+        var angle = actor.aimAngle;
+        if(overwriteAngle !== undefined){
+          angle = overwriteAngle;
+        }
+        var spdX = Math.cos(angle/180*Math.PI)*5;
+        var spdY = Math.sin(angle/180*Math.PI)*5;
+        Bullet(id,x,y,spdX,spdY,width,height);
+}
 
 
-      </div>
-      <div class="row">
-              <div class="col-md-6 c">
-                      <a href="#" class="thumbnail">
-                              <img src="../Img/photshop.jpg" id="what-do-i-ps" alt="Photoshop">
-                      </a>
-                      <p class="ding3">
-                            in order to customize your website I can use photoshop to really make it stand out and unique. photoshop is one of the best and most used photo editing software outhere. it gives the user the possibility to create awesome logos and backgrounds for your website                                </p>
-                      <button class="btn btn-danger target3"> More info</button>
-              </div>
-              <div class="col-md-6 c">
-                      <a href="#" class="thumbnail">
-                              <img src="../Img/js.png" id="what-do-i-js" alt="JavaScript">
-                      </a>
-                      <p class="ding4">
-                              In order to give your website some great features I can use javascript to make your website more interactive. Javascript is a widely used program to write programs for your website.
-                      </p>
-                      <button class="btn btn-danger target4"> More info</button>
-              </div>
-      </div>
-</div>
-<!--footer-->
-<footer class="footer-basic-centered">
-		<p class="footer-company-motto">Dont just think Creative be Creative ;) </p>
-		<p class="footer-links">
-			<a href="https://www.facebook.com/Damian01j">Facebook</a>
-			·
-			<a href="#" class="disabled">Twitter</a>
-			·
-			<a href="https://plus.google.com/109780505469370996558">Google +</a>
-			·
-			<a href="#">About</a>
-			·
-			<a href="#">Faq</a>
-			·
-			<a href="#contact" data-toggle="modal">Contact</a>
-		</p>
-		<p class="footer-company-name">Damian Jans &copy; 2016</p>
-</footer>
-</body>
-</html>
+updateEntity = function (entity){
+        updateEntityPosition(entity);
+        drawEntity(entity);
+}
+
+updateEntityPosition = function(entity){
+        if(entity.type === "player"){
+
+            if(player.pressingRight)
+                    player.x += 10;
+            if(player.pressingLeft)
+                    player.x -= 10;
+            if(player.pressingDown)
+                    player.y += 10;
+            if(player.pressingUp)
+                    player.y -= 10;
+
+            //ispositionvalid
+            if(player.x < player.width/2)
+                    player.x = player.width/2;
+            if(player.x > WIDTH-player.width/2)
+                    player.x = WIDTH - player.width/2;
+            if(player.y < player.height/2)
+                    player.y = player.height/2;
+            if(player.y > HEIGHT - player.height/2)
+                    player.y = HEIGHT - player.height/2;
+
+
+
+        }
+            else{
+            entity.x += entity.spdX;
+            entity.y += entity.spdY;
+
+            if(entity.x < 0 || entity.x > WIDTH){
+                    entity.spdX = -entity.spdX;
+            }
+            if(entity.y < 0 || entity.y > HEIGHT){
+                    entity.spdY = -entity.spdY;
+            }
+    }
+}
+testCollisionRectRect = function(rect1,rect2){
+        return rect1.x <= rect2.x+rect2.width
+                && rect2.x <= rect1.x+rect1.width
+                && rect1.y <= rect2.y + rect2.height
+                && rect2.y <= rect1.y + rect1.height;
+}
+
+drawEntity = function(entity){
+        can.save();
+        can.fillStyle = entity.color;
+        can.fillRect(entity.x-entity.width/2,entity.y-entity.height/2,entity.width,entity.height);
+        can.restore();
+}
+
+document.onclick = function(mouse){
+    preformAttack(player) ;
+}
+
+preformAttack = function(actor) {
+    if (actor.attackCounter > 25){  //every 1 sec
+            generateBullet(actor);
+            actor.attackCounter = 0;
+    }
+}
+
+document.oncontextmenu = function(mouse){ // on right klick
+preformSpecialAttack(player);
+    mouse.preventDefault();
+}
+preformSpecialAttack = function(actor) {
+    if(actor.attackCounter > 50){  //every 1 sec
+        generateBullet(actor,actor.aimAngle -5);
+        generateBullet(actor,actor.aimAngle);
+        generateBullet(actor,actor.aimAngle +5);
+            actor.attackCounter = 0;
+    }
+}
+document.onmousemove = function(mouse){
+        var mouseX = mouse.clientX - document.getElementById('can').getBoundingClientRect().left;
+        var mouseY = mouse.clientY - document.getElementById('can').getBoundingClientRect().top;
+
+        mouseX -= player.x;
+        mouseY -= player.y;
+
+        player.aimAngle = Math.atan2(mouseY,mouseX) / Math.PI * 180;
+
+}
+
+document.onkeydown = function(event){
+        if(event.keyCode === 68)        //d
+                player.pressingRight = true;
+        else if(event.keyCode === 83)   //s
+                player.pressingDown = true;
+        else if(event.keyCode === 65) //a
+                player.pressingLeft = true;
+        else if(event.keyCode === 87) // w
+                player.pressingUp = true;
+}
+
+document.onkeyup = function(event){
+        if(event.keyCode === 68)        //d
+                player.pressingRight = false;
+        else if(event.keyCode === 83)   //s
+                player.pressingDown = false;
+        else if(event.keyCode === 65) //a
+                player.pressingLeft = false;
+        else if(event.keyCode === 87) // w
+                player.pressingUp = false;
+}
+
+
+update = function(){
+        can.clearRect(0,0,WIDTH,HEIGHT);
+        frameCount++;
+        score++;
+
+        if(frameCount % 100 === 0)      //every 4 sec
+                randomlyGenerateEnemy();
+
+        if(frameCount % 75 === 0)       //every 3 sec
+                randomlyGenerateUpgrade();
+
+        player.attackCounter += player.atkSpd;
+
+
+        for(var key in bulletList){
+                updateEntity(bulletList[key]);
+
+                var toRemove = false;
+                bulletList[key].timer++;
+                if(bulletList[key].timer > 75){
+                        toRemove = true;
+                }
+
+                for(var key2 in enemyList){
+                        var isColliding = testCollisionEntity(bulletList[key],enemyList[key2]);
+                        if(isColliding){
+                                toRemove = true;
+                                delete enemyList[key2];
+                                break;
+                        }
+                }
+                if(toRemove){
+                        delete bulletList[key];
+                }
+        }
+
+        for(var key in upgradeList){
+                updateEntity(upgradeList[key]);
+                var isColliding = testCollisionEntity(player,upgradeList[key]);
+                if(isColliding){
+                        if(upgradeList[key].category === 'score')
+                                score += 1000;
+                        if(upgradeList[key].category === 'atkSpd')
+                                player.atkSpd += 3;
+                        delete upgradeList[key];
+                }
+        }
+
+        for(var key in enemyList){
+                updateEntity(enemyList[key]);
+
+                var isColliding = testCollisionEntity(player,enemyList[key]);
+                if(isColliding){
+                        player.hp = player.hp - 1;
+                }
+        }
+        if(player.hp <= 0){
+                var timeSurvived = Date.now() - timeWhenGameStarted;
+                console.log("You lost! You survived for " + timeSurvived + " ms.");
+                startNewGame();
+        }
+        updateEntityPosition(player);
+        drawEntity(player);
+        can.fillText(player.hp + " Hp",0,30);
+        can.fillText('Score: ' + score,200,30);
+}
+
+startNewGame = function(){
+        player.hp = 10;
+        timeWhenGameStarted = Date.now();
+        frameCount = 0;
+        score = 0;
+        enemyList = {};
+        upgradeList = {};
+        bulletList = {};
+        randomlyGenerateEnemy();
+        randomlyGenerateEnemy();
+        randomlyGenerateEnemy();
+
+}
+createPlayer();
+startNewGame();
+
+setInterval(update,40);
+
+
+
+
+
+
+
+
+
+
+
+
+</script>

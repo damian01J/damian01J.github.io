@@ -1,0 +1,103 @@
+*{
+	font-family: Courier New;
+	color: #ae0c13;
+
+}
+body{
+	background: rgba(112, 112, 112, 0.25);
+}
+h3{
+	font-size: 200%;
+}
+.one-third {
+	width: 29%;
+	float: left;
+	margin: 2%;
+
+
+}
+.logo-img{
+      height: 50px;
+      margin-top: 2%;
+      margin-left: 5%;
+}
+.nav-wrapper{
+background-color:#031828;
+}
+.me{
+
+              border-radius: 100px;
+              border: solid #031828 5px;
+              transition:  transform .8s ease-in-out;
+
+}
+.me:hover{
+              transform: rotate(360deg);
+}
+.circle{
+	margin: 0 auto;
+	width: 150px;
+	height: 150px;
+	background-color: #405580;
+	border-radius: 50%;
+}
+.material-icons{
+	margin-top: 19%;
+	margin-left: 6%;
+}
+.parallax-container{
+	height: 400px;
+}
+
+	 .ome h2{
+
+	color: red;
+	font-family: Courier New;
+	text-shadow: 2px 2px white;
+
+}
+
+.ome p{
+		color: white;
+
+}
+
+
+.b{
+	margin-top: 10%;
+	font-weight: 100;
+}
+
+
+@media screen and (max-width:768px){
+
+	.one-third{
+		width: 100%;
+		margin: 0;
+	}
+	.circle{
+		width: 100px;
+		height: 100px;
+	}
+	.one-third i {
+		font-size: 360%;
+
+}
+@media screen and (max-width: 478px){
+	h3{
+		font-size: 150%;
+	}
+	h1{
+		font-size: 220%;
+	}
+	h2{
+		font-size: 170%;
+	}
+	p{
+		font-size: 100%;
+		margin: 2%;
+	}
+	h4{
+		font-size: 115%;
+	}
+}

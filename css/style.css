@@ -1,6 +1,6 @@
 *{
 	font-family: Courier New;
-	color: #ae0c13;
+	color: #black;
 
 }
 body{
@@ -16,13 +16,16 @@ h3{
 
 
 }
+.float{
+	float: right;
+}
 .logo-img{
       height: 50px;
       margin-top: 2%;
       margin-left: 5%;
 }
 .nav-wrapper{
-background-color:#031828;
+
 }
 .me{
 
@@ -68,9 +71,15 @@ background-color:#031828;
 	font-weight: 100;
 }
 
+.badge{
+	display: inline-block;
+}
+
 
 @media screen and (max-width:768px){
-
+	.float{
+		float: left;
+	}
 	.one-third{
 		width: 100%;
 		margin: 0;
@@ -82,6 +91,11 @@ background-color:#031828;
 	.one-third i {
 		font-size: 360%;
 
+}
+.badge{
+	display: inline;
+	padding: 30px;
+}
 }
 @media screen and (max-width: 478px){
 	h3{
@@ -99,5 +113,10 @@ background-color:#031828;
 	}
 	h4{
 		font-size: 115%;
+	}
+	.float{
+
+		margin-top: 10px;
+		margin-bottom: 20px;
 	}
 }
